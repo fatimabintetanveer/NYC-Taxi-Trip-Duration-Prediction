@@ -60,7 +60,7 @@ The app allows users to **input trip details** and receive predicted trip durati
 
 ## 📸 Screenshots
 
-![Streamlit UI](assets/ui_screenshot.png)  
+![Streamlit UI](asset/taxi-prediction-ui.png)  
 *Example of the user interface to input trip details and get predictions.*
 
 ---
