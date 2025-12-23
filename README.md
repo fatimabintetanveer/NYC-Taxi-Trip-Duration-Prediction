@@ -74,3 +74,37 @@ python -m venv venv
 venv\Scripts\activate
 # macOS / Linux
 source venv/bin/activate
+
+2️⃣ Install Dependencies
+pip install -r app/requirements.txt
+
+3️⃣ Run Backend API
+cd app
+uvicorn main:app --reload
+
+4️⃣ Run Streamlit UI (new terminal)
+cd ui
+streamlit run streamlit_app.py
+
+
+Now open the UI in your browser and test predictions.
+
+📈 Results
+Model	RMSE	MAE
+Random Forest	XX	XX
+XGBoost	XX	XX
+LSTM	XX	XX
+
+📎 Future Improvements
+
+Deploy the app to Streamlit Cloud or Heroku for online access
+
+Integrate real-time NYC taxi data for live predictions
+
+Add hyperparameter tuning and model ensembling
+
+Add interactive maps to visualize routes and distances
+
+👩‍💻 Author
+
+Fatima Bin Tanveer
