@@ -93,11 +93,13 @@ streamlit run streamlit_app.py
 
 Now open the UI in your browser and test predictions.
 
-### 📈 Results
-Model	RMSE	MAE
-Random Forest	4.48	2.91
-XGBoost	4.43	2.76
-LSTM	4.55	2.83
+## 📈 Results
+
+| Model          | RMSE | MAE |
+|----------------|------|-----|
+| Random Forest  | 4.48 | 2.91 |
+| XGBoost        | 4.43 | 2.76 |
+| LSTM           | 4.55 | 2.83 |
 
 ### 📎 Future Improvements
 
