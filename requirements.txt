@@ -1,0 +1,8 @@
+torch
+numpy
+joblib
+fastapi
+uvicorn
+pydantic
+streamlit
+pyngrok
