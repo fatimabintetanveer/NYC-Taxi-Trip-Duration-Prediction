@@ -74,28 +74,32 @@ python -m venv venv
 venv\Scripts\activate
 # macOS / Linux
 source venv/bin/activate
+ ```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
+```bash
 pip install -r app/requirements.txt
-
-3️⃣ Run Backend API
+ ```
+### 3️⃣ Run Backend API
+```bash
 cd app
 uvicorn main:app --reload
-
-4️⃣ Run Streamlit UI (new terminal)
+ ```
+### 4️⃣ Run Streamlit UI (new terminal)
+```bash
 cd ui
 streamlit run streamlit_app.py
-
+ ```
 
 Now open the UI in your browser and test predictions.
 
-📈 Results
+### 📈 Results
 Model	RMSE	MAE
-Random Forest	XX	XX
-XGBoost	XX	XX
-LSTM	XX	XX
+Random Forest	4.48	2.91
+XGBoost	4.43	2.76
+LSTM	4.55	2.83
 
-📎 Future Improvements
+### 📎 Future Improvements
 
 Deploy the app to Streamlit Cloud or Heroku for online access
 
@@ -105,6 +109,11 @@ Add hyperparameter tuning and model ensembling
 
 Add interactive maps to visualize routes and distances
 
-👩‍💻 Author
+### 👩‍💻 Author
 
-Fatima Bin Tanveer
+Fatima Binte Tanveer
+
+### 📄 License
+
+This project is open-source and available for educational purposes.
+Feel free to fork, experiment, and improve!
