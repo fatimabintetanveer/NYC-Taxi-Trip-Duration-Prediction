@@ -1,37 +1,76 @@
-NYC Taxi Trip Duration Prediction 🚕🕒
+# 🚕 NYC Taxi Trip Duration Prediction
 
-This project predicts the duration of NYC taxi rides using three models:
-1. Random Forest (Scikit-learn)
-2. XGBoost
-3. LSTM (PyTorch)
+This project predicts the duration of New York City taxi rides using machine learning and deep learning models.  
+It includes a complete data science pipeline (EDA, feature engineering, modeling) and a **user-friendly UI** for predictions.
 
-The dataset is from Kaggle: "NYC Taxi Trip Duration".
+---
 
-The Colab notebook includes:
-- Full EDA
-- Feature engineering
-- Model training and evaluation
-- Log-transforming trip duration for better results
+## 📌 Project Overview
 
-Deployment:
-- Backend: FastAPI (`app/main.py`)
-- Frontend: Streamlit (`ui/streamlit_app.py`)
+The goal is to estimate taxi trip durations accurately based on trip and location features.  
+This can help optimize ride planning, improve scheduling, and support real-time trip management.
 
-How to Run:
+---
 
-1. Unzip the folder and open a terminal.
-2. (Optional) Create a virtual environment:
-   - `python -m venv venv`
-   - `source venv/bin/activate` (or `venv\Scripts\activate` on Windows)
-3. Install dependencies:
-   - `pip install -r app/requirements.txt`
-4. Run backend API:
-   - `cd app`
-   - `uvicorn main:app --reload`
-5. Run Streamlit UI (in a new terminal):
-   - `cd ui`
-   - `streamlit run streamlit_app.py`
+## 🧠 Models Used
 
-The app allows users to input trip details and get predicted duration in seconds.
+- **Random Forest** (Scikit-learn)  
+- **XGBoost** (Gradient Boosting)  
+- **LSTM** (PyTorch) for sequence modeling of trips  
 
-Author: Assad Bin Tanveer
+### Key Techniques:
+- Log-transforming trip duration for better predictions  
+- Feature engineering: distance, pickup/dropoff times, day-of-week, and more  
+- Evaluation: RMSE and MAE metrics on validation set  
+
+---
+
+## 📊 Dataset
+
+- **Source:** [Kaggle – NYC Taxi Trip Duration](https://www.kaggle.com/c/nyc-taxi-trip-duration)  
+- **Note:** Full dataset is not included due to size; only a **sample CSV** is provided for testing.  
+
+---
+
+## 🛠 Tech Stack
+
+| Layer        | Technology                   |
+|--------------|-----------------------------|
+| Backend      | FastAPI                     |
+| Frontend     | Streamlit                   |
+| Data Science | Python, Pandas, NumPy       |
+| ML Models    | Scikit-learn, XGBoost, PyTorch |
+| Visualization| Matplotlib, Seaborn         |
+
+---
+
+## 🖥️ Deployment
+
+### Backend API
+- File: `app/main.py`  
+- Built with **FastAPI**  
+
+### Frontend UI
+- File: `ui/streamlit_app.py`  
+- Built with **Streamlit**  
+
+The app allows users to **input trip details** and receive predicted trip durations in seconds.
+
+---
+
+## 📸 Screenshots
+
+![Streamlit UI](assets/ui_screenshot.png)  
+*Example of the user interface to input trip details and get predictions.*
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Optional: Create Virtual Environment
+```bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# macOS / Linux
+source venv/bin/activate
