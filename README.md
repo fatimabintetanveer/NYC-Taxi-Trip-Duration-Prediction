@@ -103,13 +103,10 @@ Now open the UI in your browser and test predictions.
 
 ### 📎 Future Improvements
 
-Deploy the app to Streamlit Cloud or Heroku for online access
-
-Integrate real-time NYC taxi data for live predictions
-
-Add hyperparameter tuning and model ensembling
-
-Add interactive maps to visualize routes and distances
+- Deploy the app to Streamlit Cloud or Heroku for online access
+- Integrate real-time NYC taxi data for live predictions
+- Add hyperparameter tuning and model ensembling
+- Add interactive maps to visualize routes and distances
 
 ### 👩‍💻 Author
 
